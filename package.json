@@ -1,6 +1,6 @@
 {
   "name": "file-task-runner",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Easy file-based task runner",
   "main": "src/index.js",
   "scripts": {
