@@ -1,0 +1,42 @@
+{
+  "name": "file-task-runner",
+  "version": "1.0.0",
+  "description": "Easy file-based task runner",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "keywords": [
+    "task",
+    "job",
+    "migration"
+  ],
+  "author": "Remco Hendriks, ABN AMRO Bank 2020",
+  "license": "MIT",
+  "nyc": {
+    "exclude": [
+      "chai-test/**",
+      "test/**"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
+  "bin": {
+    "run-file-tasks": "./bin/migrate.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.2",
+    "sinon": "^9.0.2"
+  },
+  "dependencies": {
+    "commander": "^6.0.0"
+  }
+}
